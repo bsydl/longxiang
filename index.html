@@ -43,7 +43,7 @@
 <!-- TODO:公司名称确定（英文）-->
 <h1 style="color:#444444;">Jewelry customization Service</h1>
 <p style="color:#444444;">A timeless Maison icon, reinvented time and time again since her first sighting in 1914. Magnetic, feline and free, the Panthère de Cartier is a force to be reckoned with.</p>
-<p><a class="btn btn-success btn-lg" href="https://finance.yahoo.com/quote/1263.HK" role="button">PC PARTNER<span id="shijia"></span></a></p> 
+<p><a class="btn btn-success btn-lg" href="" role="button">Custom jewelry<span id="shijia"></span></a></p> 
 </div></div>
 </section>
 <!--home-->
@@ -200,29 +200,10 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<!--<script src="js/jquery.singlePageNav.min.js"></script>-->
 <script src="js/wow.min.js"></script>
 <script>
 $(function(){
-    /*导航跳转效果插件*/
-    /*$('.nav').singlePageNav({
-        offset:70
-    });*/
-    /*小屏幕导航点击关闭菜单*/
-    /*$('.navbar-collapse a').click(function(){
-        $('.navbar-collapse').collapse('hide');
-    });*/
     new WOW().init();
-    
-    //鼠标滑过图片切换
-    /* var oldImageUrl = '';
-    $('.case-img').hover(function(){
-        oldImageUrl = $(this).attr('src');
-        $(this).attr('src', $(this).attr('data-src')).fadeIn();
-    },
-    function(){
-        $(this).attr('src', oldImageUrl).fadeIn();
-    }); */
 });
 </script>
 
@@ -230,7 +211,7 @@ $(function(){
 <script type="text/javascript">
 function formatNum(num,n)
 {
-	//参数说明：num 要格式化的数字 n 保留小数位
+	
 	num = String(num.toFixed(n));
 	var re = /(-?\d+)(\d{3})/;
 	while(re.test(num)) num = num.replace(re,"$1,$2")
@@ -250,16 +231,6 @@ var change=formatNum(today_new-elements[3],3);
 var change_p=formatNum(change/elements[3]*100,3);
 
 $("#shijia").html(" 市價:" + today_new);
-/* document.write("股票英文："+elements[0]+"<br/>");
-document.write("股票名称："+elements[1]+"<br/>");
-document.write("今开盘："+today_open+"<br/>");
-document.write("昨收盘："+elements[3]+"<br/>");
-document.write("最新价："+today_new+"<br/>");
-document.write("升跌："+change+"<br/>");
-document.write("升跌%："+change_p+" %<br/>");
-document.write("成交价："+elements[10]+" HK$<br/>");
-document.write("成交量："+elements[12]+" 股<br/>");
-document.write("更新日期："+elements[17]+"<br/>");
-document.write("更新时间："+elements[18]+"<br/>"); */
+
 </script>
 </body></html>
